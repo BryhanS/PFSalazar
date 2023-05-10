@@ -46,41 +46,48 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-/*Body*/
-.grid-template{
-    display: grid;
-    grid-template: 
-        'header' auto
-        'main' auto
-        'footer' auto
-    ;
-}
-
-
-
-#header{
-    grid-area: header;
-}
-
-#main{
-    grid-area: main;
-}
-
-#footer{
-    grid-area: footer;
-}
 
 
 /*header*/
 
-
-
-
-
 .header-container{
     background-color: var(--second-color);
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 1;
+    padding: 2rem;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box h1{
+    color: var(--background-second);
+}
+
+.header-menu ul{
+    display: block;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.header-menu ul li{
+    margin-bottom: 0.5rem;
+}
+
+.header-menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+.header-menu ul li a:hover{
+    display: block;
+    color: var(--second-color);
+    background-color: var(--background-second);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    scale: 1.1;
+    transition: 0.7s ease;
 }
