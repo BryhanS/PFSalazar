@@ -1,0 +1,86 @@
+:root{
+    --background-first: #F4EAD5;
+    --background-second: #FFFBE9;
+    --first-color: #CCD6A6;
+    --second-color: #DAE2B6;
+}
+
+
+html{
+    font-size: 62.50%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: var(--background-second);
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--first-color);
+    font-size: 3.5rem;
+}
+
+
+body{
+    background-color: var(--background-second);
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*Body*/
+.grid-template{
+    display: grid;
+    grid-template: 
+        'header' auto
+        'main' auto
+        'footer' auto
+    ;
+}
+
+
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+/*header*/
+
+
+
+
+
+.header-container{
+    background-color: var(--second-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
