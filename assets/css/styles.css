@@ -80,8 +80,75 @@ body::-webkit-scrollbar{
     margin-bottom: 0.5rem;
 }
 
-.header-menu ul li:hover{
-    margin-bottom: 0;
+
+/*carousel*/
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5%;
+}
+
+/*seccion productos*/
+
+.product-section{
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.product-section h2, .section-team h2 ,section h2{
+    text-align: center; 
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card-body{
+    display: block;
+    height: 350px;
+    width: 250px;
+    margin: 0 2.5rem 2.5rem 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2.5rem;
+}
+
+.card-body img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+
+.card-body h3{
+    display: block;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--first-color);
+    
+}
+
+.card-body a{
+    display: block;
+    background-color: var(--first-color);
+    text-align: center;
+    border-radius: 5px;
 }
 
 
@@ -111,4 +178,7 @@ body::-webkit-scrollbar{
         color: var(--second-color);
     }
 
+    .carousel{
+        width: 80%;
+    }
 }
