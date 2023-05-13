@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-first: #F4EAD5;
     --background-second: #FFFBE9;
     --first-color: #CCD6A6;
@@ -6,22 +6,22 @@
 }
 
 
-html{
+html {
     font-size: 62.50%;
     font-family: 'Open Sans', sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     color: var(--background-second);
     text-decoration: none;
     font-size: 2rem;
@@ -29,7 +29,9 @@ a{
     text-decoration: none;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: bold;
     font-style: italic;
     color: var(--first-color);
@@ -37,12 +39,12 @@ h1, h2, h3{
 }
 
 
-body{
+body {
     background-color: var(--background-second);
 
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -50,7 +52,7 @@ body::-webkit-scrollbar{
 
 /*header*/
 
-.header-container{
+.header-container {
     background-color: var(--second-color);
     width: 100%;
     padding: 2rem;
@@ -59,38 +61,38 @@ body::-webkit-scrollbar{
     z-index: 1;
 }
 
-.logo-box{
+.logo-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo-box h1{
+.logo-box h1 {
     color: var(--background-second);
     margin-left: 0.5rem;
 }
 
-.header-menu ul{
+.header-menu ul {
     display: block;
     font-weight: bold;
     padding: 1rem;
 }
 
-.header-menu ul li{
+.header-menu ul li {
     margin-bottom: 0.5rem;
 }
 
 
 /*carousel*/
 
-.carousel{
+.carousel {
     display: flex;
     flex-direction: row;
     max-width: 90%;
     margin: 2rem auto;
 }
 
-.carousel img{
+.carousel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -99,18 +101,20 @@ body::-webkit-scrollbar{
 
 /*seccion productos*/
 
-.product-section{
+.product-section {
     display: block;
     width: 100%;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.product-section h2, .section-team h2 ,section h2{
-    text-align: center; 
+.product-section h2,
+.section-team h2,
+section h2 {
+    text-align: center;
 }
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +122,7 @@ body::-webkit-scrollbar{
 }
 
 
-.card-body{
+.card-body {
     display: block;
     height: 35rem;
     width: 25rem;
@@ -127,7 +131,7 @@ body::-webkit-scrollbar{
     padding: 2.5rem;
 }
 
-.card-body img{
+.card-body img {
     width: 100%;
     height: 80%;
     object-fit: cover;
@@ -135,16 +139,16 @@ body::-webkit-scrollbar{
 }
 
 
-.card-body h3{
+.card-body h3 {
     display: block;
     margin: 1rem;
     font-size: 2rem;
     text-align: center;
     color: var(--first-color);
-    
+
 }
 
-.card-body a{
+.card-body a {
     display: block;
     background-color: var(--first-color);
     text-align: center;
@@ -152,61 +156,145 @@ body::-webkit-scrollbar{
 }
 
 
-@media (min-width: 768px){
+/*Video section*/
 
-    .header-container{
+.section-video {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.section-video p {
+    font-size: 2rem;
+    text-align: justify;
+    color: var(--first-color);
+}
+
+.section-video iframe {
+    height: 30rem;
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+    font-size: 2rem;
+    margin: 20px auto auto auto;
+    color: var(--background-second);
+    padding: 25px;
+}
+
+
+.footer-left section ul li{
+    display: flex;
+    padding: .8rem;
+}
+
+box-icon{
+    width: 25px;
+    height: 25px;
+    fill: var(--background-second);
+}
+
+.footer-left section ul li a {
+    margin-left: 2rem;
+}
+
+.footer-center section p{
+    font-size: 1.2rem;
+}
+
+.footer-right input{
+    width: 50%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .header-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .header-menu ul li{
+    .header-menu ul li {
         display: inline-block;
         margin: 0px 1.2rem;
     }
-    
-    .header-menu ul li:hover{
+
+    .header-menu ul li:hover {
         cursor: pointer;
         background-color: var(--background-second);
         border-radius: 1rem;
         scale: 1.2;
         transition: 0.2s ease;
-        
+
     }
 
-    .header-menu ul li a:hover{
+    .header-menu ul li a:hover {
         color: var(--second-color);
     }
 
-    .carousel{
+    .carousel {
         width: 80%;
     }
 
-    .card-container{
+    .card-container {
         display: grid;
         align-items: center;
         grid-template-columns: auto auto;
 
     }
+
+    /*video*/
+    .section-video {
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: center;
+        height: 30rem;
+    }
+
+
+    .section-video p {
+        width: 50%;
+    }
+
+    .section-video iframe {
+        width: 50%;
+        height: auto;
+    }
+
 }
 
 
-@media (min-width: 769px) and (min-width: 992px){
-    .card-container{
+@media (min-width: 769px) and (min-width: 992px) {
+    .card-container {
         grid-template-columns: auto auto auto;
     }
 }
 
 
 
-@media (min-width: 1200px){
-    .card-container{
+@media (min-width: 1200px) {
+    .card-container {
         grid-template-columns: auto auto auto auto;
     }
 }
 
-@media (min-width: 1400px){
-    .card-container{
+@media (min-width: 1400px) {
+    .card-container {
         grid-template-columns: auto auto auto auto auto;
     }
 }
