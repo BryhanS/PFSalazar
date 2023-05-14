@@ -1,6 +1,6 @@
 :root {
     --background-first: #F4EAD5;
-    --background-second: #FFFBE9;
+    --background-second: rgb(255, 251, 233);
     --first-color: #CCD6A6;
     --second-color: #DAE2B6;
 }
@@ -26,7 +26,6 @@ a {
     text-decoration: none;
     font-size: 2rem;
     cursor: pointer;
-    text-decoration: none;
 }
 
 h1,
@@ -54,11 +53,8 @@ body::-webkit-scrollbar {
 
 .header-container {
     background-color: var(--second-color);
-    width: 100%;
     padding: 2rem;
     border-bottom: 1px solid;
-    position: sticky;
-    z-index: 1;
 }
 
 .logo-box {
@@ -72,30 +68,44 @@ body::-webkit-scrollbar {
     margin-left: 0.5rem;
 }
 
-.header-menu ul {
-    display: block;
+
+.header-menu ul li a{
+    color: var(--background-second);
+    text-decoration: none;
+    font-size: 2.2rem;
+    cursor: pointer;
     font-weight: bold;
-    padding: 1rem;
 }
 
-.header-menu ul li {
-    margin-bottom: 0.5rem;
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:hover{
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28251, 251, 233, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 30px;
+    height: 30px;
+    border-color: var(--background-second);
 }
 
 
 /*carousel*/
 
 .carousel {
-    display: flex;
-    flex-direction: row;
     max-width: 90%;
     margin: 2rem auto;
 }
 
-.carousel img {
+.carousel-inner img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 2.5%;
 }
 
@@ -222,12 +232,6 @@ box-icon{
 
 
 @media (min-width: 768px) {
-
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
     .header-menu ul li {
         display: inline-block;
