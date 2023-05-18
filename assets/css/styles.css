@@ -206,6 +206,7 @@ footer{
 .footer-left section ul li{
     display: flex;
     padding: .8rem;
+    align-items: center;
 }
 
 box-icon{
