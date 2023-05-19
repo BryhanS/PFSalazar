@@ -166,6 +166,62 @@ section h2 {
 }
 
 
+/*section team*/
+
+.section-team{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.team-body{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.team-body img{
+
+    width: 600px;
+    padding: 2rem;
+    float: left;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+
+.team-body p{
+    font-size: 2rem;
+    text-align: justify;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
+/*team section*/
+.team{
+    width: 100%;
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+.team-card{
+    display: inline-block;
+    width: 20%;
+}
+
+.team-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    filter: contrast(1.2);
+}
+
+.team-card p{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--first-color);
+}
+
+
 /*Video section*/
 
 .section-video {
