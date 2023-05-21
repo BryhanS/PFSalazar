@@ -124,6 +124,8 @@ section h2 {
     text-align: center;
 }
 
+/*producto card*/
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -139,6 +141,7 @@ section h2 {
     margin: 2.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2.5rem;
+    border-radius: 1.5rem;
 }
 
 .card-body img {
@@ -259,6 +262,8 @@ section h2 {
     -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 /*footer*/
@@ -404,13 +409,5 @@ box-icon{
     .team-body img, .team-body p{
         width: 50%;
     }
-    
-        
-    
-}
-
-@media (min-width: 1400px) {
-    .card-container {
-        grid-template-columns: auto auto auto auto auto;
-    }
+  
 }
