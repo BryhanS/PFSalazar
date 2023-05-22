@@ -211,7 +211,7 @@ section h2 {
 
 .team-card{
     display: inline-block;
-    margin-bottom: 2.5rem;
+    margin: 0rem 2.5rem;
 }
 
 .team-card img{
