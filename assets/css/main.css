@@ -490,7 +490,7 @@ footer{
 
 
 
-.footer-left sectio, .footer-center section, .footer-right section{
+.footer-left section, .footer-center section, .footer-right section{
     height: 100%;
     top: 50%;
     transform: translateY(0%);

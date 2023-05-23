@@ -359,7 +359,85 @@ section h2 {
     
 }
 
+/*contact form*/
 
+.form-section {
+    margin: 2.5rem 0rem;
+}
+.form-section form{
+    width: 80%;
+    margin: 2.5rem auto;
+}
+
+.form-section form p{
+    font-size: 1.5rem;
+    color: var(--first-color)
+}
+
+.form-section form p label{
+    display: block;
+    width: 100%;
+    text-align: start;
+    margin: .5rem auto;
+}
+
+.form-section form p button{
+    color: var(--first-color);
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 3rem;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.form-section form p input, .form-section form p textarea{
+    display: block;
+    width: 100%;
+    text-align: start;
+    border-bottom: solid var(--second-color);
+    color: var(--second-color);
+}
+
+
+.form-section form h3{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.form-section img{
+    display: none;
+}
+
+
+/*location*/
+
+.section-location{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.location-map{
+   float: left;
+   padding: 5rem;
+}
+
+
+.location-information{
+    float: left;
+    padding: 5rem;
+    height: auto;
+}
+
+.location-information p{
+    font-size: 2rem;
+    margin: 2.5rem auto;
+    text-align: start;
+    color: var(--first-color);
+}
 
 /*footer*/
 
@@ -470,7 +548,50 @@ box-icon{
         display: block;
     }
     
+    .form-section form p input, .form-section form p textarea{
+        width: 100%;
+    }
+    .form-section form p button{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
     
+    .form-section img{
+        display: block;
+        width: 35rem;
+        height: 35rem;
+        margin: 2.5rem auto;
+        object-fit: fill;
+    }
+
+    .form-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .form-container form{
+        width: 50%;
+        padding: 2rem;
+    }
+    
+    .form-container form input{
+        width: 100%;
+    }
+
+    .form-container img{
+        display: block;
+        width: 50%;
+        height: auto;
+        padding: 2rem;
+        
+    }
 }
 
 
