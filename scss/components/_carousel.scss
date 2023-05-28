@@ -1,0 +1,15 @@
+// _carousel.scss
+
+
+.carousel {
+    max-width: 90%;
+    margin: 2.5rem auto;
+
+    &-inner{
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 2.5%;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+
+// _article.scss
+@use '../base/variable' as v;
+
+
+.article{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.5rem;
+
+    &-header{
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: start;
+
+        h3{
+            font-size: 2rem;
+            color: v.$first-color;
+        }
+
+        p{
+            font-weight: bold;
+            color: v.$first-color;
+        }
+    }
+
+    &-body{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+
+        p{
+            height: 100%;
+            margin: auto;
+            font-size: 1.5rem;
+            text-align: justify;
+            float: left;
+            overflow: hidden;
+            color: var(--first-color);
+            font-weight: 500;
+        }
+
+        img{
+            display: none;
+        }
+    }
+
+    &-end{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: v.$first-color;
+        margin-top: 1rem;
+
+        a{
+            font-size: 1.5rem;
+            color: v.$first-color;
+            cursor: pointer;
+        }
+    }
+}

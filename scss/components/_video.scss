@@ -1,0 +1,27 @@
+// _video.scss
+@use '../base/variable' as v;
+
+
+.section-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+
+    p{
+        font-size: 2rem;
+        color: v.$first-color;
+        overflow: hidden;
+    }
+
+    iframe{
+        height: 30rem;
+        -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+}

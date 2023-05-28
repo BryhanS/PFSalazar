@@ -1,0 +1,74 @@
+// _footer.scss
+@use '../base/variable' as v;
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: v.$second-color;
+    font-size: 2rem;
+    margin: 20px auto auto auto;
+    color: v.$background-second;
+    padding: 25px;
+}
+
+
+.footer{
+
+    &-left{
+        section{
+            ul{
+                li{
+                    display: flex;
+                    padding: .8rem;
+                    align-items: center;
+
+                    a{
+                        margin-left: 2rem;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &-center{
+        section{
+            p{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            h2{
+                color: v.$background-second;
+            }
+        }
+    }
+
+    &-right{
+        section{
+            input{
+                width: 100%;
+                height: 30px;
+                border: none;
+                color: v.$second-color;
+            }
+
+            div{
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+                gap: 2rem;
+            }
+
+            h2{
+                color: v.$background-second;
+            }
+        }
+    }
+
+
+
+}
+

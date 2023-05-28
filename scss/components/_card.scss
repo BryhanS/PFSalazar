@@ -1,0 +1,35 @@
+// _card.scss
+@use '../base/variable' as v;
+
+
+.card-body {
+    display: block;
+    height: 35rem;
+    width: 25rem;
+    margin: 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+
+    img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+
+    h3 {
+        display: block;
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        color: v.$first-color;
+    }
+
+    a {
+        display: block;
+        background-color: v.$first-color;
+        text-align: center;
+        border-radius: 5px;
+    }
+}

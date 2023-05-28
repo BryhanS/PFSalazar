@@ -1,0 +1,32 @@
+// _location.scss
+@use '../base/variable' as v;
+
+
+.location {
+    &-map {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-map{
+        iframe{
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+    &-information{
+        width: 100%;
+        padding: 0px 5rem;
+        height: auto;
+
+        p{
+            font-size: 2rem;
+            margin: 2.5rem auto;
+            text-align: start;
+            color: v.$first-color;
+            font-weight: bold;
+        }
+    }
+}
+

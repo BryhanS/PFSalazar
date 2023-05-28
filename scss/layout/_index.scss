@@ -1,0 +1,54 @@
+// _index.scss
+
+@use '../base/variable' as v;
+
+.header-container {
+    background-color: v.$second-color;
+    padding: 2rem;
+    border-bottom: 1px solid;
+
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: v.$background-second;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .header-menu {
+        ul{
+
+            li{
+
+                a{
+                    color: v.$background-second;
+                    text-decoration: none;
+                    font-size: 2.2rem;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}
+
+
+.product-section h2,
+.section-team h2,
+section h2 {
+    text-align: center;
+}
+
+.product-section {
+    display: block;
+    width: 100%;
+    margin: 2.5rem auto;
+}
+
+
+
+
