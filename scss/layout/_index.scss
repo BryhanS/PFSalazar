@@ -35,8 +35,16 @@
                 }
             }
         }
+    }   
+}
+
+.card-container{
+    div:nth-child(4){
+        display: none;
     }
-    
+    div:nth-child(5){
+        display: none;
+    }
 }
 
 

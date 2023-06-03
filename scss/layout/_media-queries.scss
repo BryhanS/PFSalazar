@@ -18,6 +18,10 @@
         align-items: center;
         grid-template-columns: auto auto;
 
+        div:nth-child(4){
+            display: block;
+        }
+
     }
 
     /*video*/
@@ -157,6 +161,11 @@
 
     .card-container {
         grid-template-columns: auto auto auto;
+
+        div:nth-child(3){
+            display: none;
+        }
+        
     }
 
     footer {
@@ -196,6 +205,10 @@
 @media (min-width: 1200px) {
     .card-container {
         grid-template-columns: auto auto auto auto;
+
+        div:nth-child(3){
+            display: block;
+        }
     }
 
     .team-body {
