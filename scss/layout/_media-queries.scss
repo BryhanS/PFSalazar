@@ -37,7 +37,13 @@
         width: 50%;
     }
 
-    .team{
+    /*section team*/
+
+    .section-team .team-body{
+        flex-direction: row;
+    }
+
+    .team-container{
         flex-direction: row;
     }
 

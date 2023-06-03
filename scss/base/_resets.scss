@@ -1,4 +1,8 @@
 // _resets.scss
+@use './variable' as v;
+@import './utility';
+
+
 
 html {
     font-size: 62.50%;
@@ -9,4 +13,37 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: v.$background-second;
+
+    &:-webkit-scrollbar {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        color: v.$background-second;
+        text-decoration: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-weight: bold;
+        font-style: italic;
+        color: v.$first-color;
+        font-size: 3.5rem;
+    }
+
+    box-icon{
+        @include icon-style;
+    }
+    
 }
