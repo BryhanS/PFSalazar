@@ -90,23 +90,21 @@
     .form-container{
         display: flex;
         justify-content: center;
+
+        form{
+            width: 50%;
+            padding: 2rem;
+        }
+
+        img{
+            display: block;
+            width: 50%;
+            height: auto;
+            padding: 2rem;
+            border-radius: 4rem
+        }
     }
     
-
-    .form-container form{
-        width: 50%;
-        padding: 2rem;
-    }
-    
-
-    .form-container img{
-        display: block;
-        width: 50%;
-        height: auto;
-        padding: 2rem;
-        border-radius: 4rem
-    }
-
 
     .section-location{
         display: flex;
@@ -151,14 +149,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-content: space-between;
-    }
 
-    .footer-right section input{
-        display: block;
-        width: 60%;
-        margin: auto;
+        .footer-right div input{
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
     }
-
 
     
 }
@@ -174,10 +171,14 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        img{
+            width: 50%;
+        }
+
+        p{
+            width: 50%;
+        }
     }
 
-    .team-body img, .team-body p{
-        width: 50%;
-    }
-  
 }
