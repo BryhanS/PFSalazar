@@ -233,6 +233,9 @@ footer {
   padding: 25px;
 }
 
+.footer-left div h2 {
+  color: rgb(255, 251, 233);
+}
 .footer-left div ul li {
   display: flex;
   padding: 0.8rem;
@@ -434,7 +437,8 @@ section h2 {
     min-height: 25rem;
     margin-bottom: 5rem;
   }
-  .section-video p, .section-video iframe {
+  .section-video p,
+  .section-video iframe {
     display: inline-block;
     width: 50%;
   }
@@ -458,7 +462,8 @@ section h2 {
   .article-body img {
     display: block;
   }
-  .form-section form p input, .form-section form p textarea {
+  .form-section form p input,
+  .form-section form p textarea {
     width: 80%;
     margin: auto;
   }
@@ -498,7 +503,8 @@ section h2 {
     flex-direction: row;
     margin-bottom: 3.5rem;
   }
-  .location-map, .location-information {
+  .location-map,
+  .location-information {
     width: 50%;
   }
   .location-map iframe {
@@ -527,6 +533,15 @@ section h2 {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
+  }
+  footer .footer-left {
+    height: 100%;
+  }
+  footer .footer-center {
+    height: 100%;
+  }
+  footer .footer-right {
+    height: 100%;
   }
   footer .footer-right div input {
     display: block;

@@ -3,7 +3,7 @@
 
 
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: v.$second-color;
@@ -14,61 +14,66 @@ footer{
 }
 
 
-.footer{
+.footer {
 
-    &-left{
-        div{
-            ul{
-                li{
+    &-left {
+        div {
+
+            h2 {
+                color: v.$background-second;
+            }
+
+            ul {
+                li {
                     display: flex;
                     padding: .8rem;
                     align-items: center;
 
-                    a{
+                    a {
                         margin-left: 2rem;
                     }
                 }
-                
+
             }
         }
     }
 
-    &-center{
-        div{
-            p{
+    &-center {
+        div {
+            p {
                 font-size: 1.5rem;
                 font-weight: bold;
             }
 
-            h2{
+            h2 {
                 color: v.$background-second;
             }
         }
     }
 
-    &-right{
-        div{
-            input{
+    &-right {
+        div {
+            input {
                 width: 100%;
                 height: 30px;
                 border: none;
                 color: v.$second-color;
 
-                &::placeholder{
+                &::placeholder {
                     padding-left: 1rem;
                     font-size: 1.5rem;
                 }
-            
+
             }
 
-            div{
+            div {
                 display: flex;
                 justify-content: center;
                 margin-top: 2rem;
                 gap: 2rem;
             }
 
-            label{
+            label {
                 display: block;
                 text-align: center;
                 color: v.$background-second;
@@ -83,4 +88,3 @@ footer{
 
 
 }
-
