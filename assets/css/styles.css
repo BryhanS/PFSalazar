@@ -254,14 +254,23 @@ footer {
   border: none;
   color: #DAE2B6;
 }
+.footer-right div input::placeholder {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
 .footer-right div div {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   gap: 2rem;
 }
-.footer-right div h2 {
+.footer-right div label {
+  display: block;
+  text-align: center;
   color: rgb(255, 251, 233);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.5rem;
 }
 
 .header-container {

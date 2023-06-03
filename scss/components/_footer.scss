@@ -53,6 +53,12 @@ footer{
                 height: 30px;
                 border: none;
                 color: v.$second-color;
+
+                &::placeholder{
+                    padding-left: 1rem;
+                    font-size: 1.5rem;
+                }
+            
             }
 
             div{
@@ -62,8 +68,14 @@ footer{
                 gap: 2rem;
             }
 
-            h2{
+            label{
+                display: block;
+                text-align: center;
                 color: v.$background-second;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 3.5rem;
+
             }
         }
     }
