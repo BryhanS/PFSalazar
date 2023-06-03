@@ -12,9 +12,12 @@
         justify-content: center;
         align-items: center;
 
-        h1{
+        span{
             color: v.$background-second;
             margin-left: 0.5rem;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 3.5rem;
         }
     }
 
