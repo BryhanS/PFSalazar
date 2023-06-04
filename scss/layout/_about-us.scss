@@ -20,6 +20,7 @@
             padding: 2rem;
             object-fit: cover;
             border-radius: 5rem;
+            width: 100%;
         }
 
         p{
@@ -27,7 +28,8 @@
             text-align: justify;
             overflow: hidden;
             padding: 2rem;
-            color: v.$first-color;
+            color: v.$text-primary;
+            width: 100%;
         }
     }
 

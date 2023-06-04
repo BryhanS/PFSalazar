@@ -141,7 +141,7 @@
                 li{
                     &:hover{
                         cursor: pointer;
-                        background-color: v.$background-second;
+                        background-color: v.$background-secondary;
                         border-radius: 1rem;
                         scale: 1.2;
                         transition: 0.2s ease;
@@ -149,7 +149,7 @@
 
                     a{
                         &:hover{
-                            color: v.$second-color;
+                            color: v.$background-primary;
                         }
                     }
                 

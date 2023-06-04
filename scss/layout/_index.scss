@@ -3,7 +3,7 @@
 @use '../base/variable' as v;
 
 .header-container {
-    background-color: v.$second-color;
+    background-color: v.$background-primary;
     padding: 2rem;
     border-bottom: 1px solid;
 
@@ -13,7 +13,7 @@
         align-items: center;
 
         span{
-            color: v.$background-second;
+            color: v.$text-primary;
             margin-left: 0.5rem;
             font-weight: bold;
             font-style: italic;
@@ -27,7 +27,7 @@
             li{
 
                 a{
-                    color: v.$background-second;
+                    color: v.$text-primary;
                     text-decoration: none;
                     font-size: 2.2rem;
                     cursor: pointer;

@@ -17,12 +17,12 @@
 
         h3{
             font-size: 2rem;
-            color: v.$first-color;
+            color: v.$text-primary;
         }
 
         p{
             font-weight: bold;
-            color: v.$first-color;
+            color: v.$text-primary;
         }
     }
 
@@ -40,7 +40,7 @@
             text-align: justify;
             float: left;
             overflow: hidden;
-            color: var(--first-color);
+            color: v.$text-primary;
             font-weight: 500;
         }
 
@@ -53,12 +53,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        color: v.$first-color;
+        color: v.$text-primary;
         margin-top: 1rem;
 
         a{
             font-size: 1.5rem;
-            color: v.$first-color;
+            color: v.$text-primary;
             cursor: pointer;
         }
     }

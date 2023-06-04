@@ -15,7 +15,7 @@
 
         p{
             font-size: 1.5rem;
-            color: v.$first-color;
+            color: v.$text-primary;
 
             label{
                 display: block;
@@ -26,7 +26,7 @@
             }
 
             button{
-                color: v.$first-color;
+                color: v.$text-primary;
                 margin-top: 0.8rem;
                 width: 100%;
                 height: 3rem;
@@ -37,13 +37,13 @@
                 display: block;
                 width: 100%;
                 text-align: start;
-                border-bottom: solid v.$second-color;
-                color: v.$second-color;
+                border-bottom: solid v.$background-primary;
+                color: v.$text-primary;
             }
         }
 
         h3{
-            color: v.$first-color;
+            color: v.$text-primary;
             font-size: 1.5rem;
             padding-top: 2.5rem;
             padding-bottom: 2.5rem;
