@@ -1,23 +1,22 @@
-
 /*contact form*/
 @use '../base/variable' as v;
 
 .form-section {
     margin: 2.5rem 0rem;
 
-    img{
+    img {
         display: none;
     }
 
-    form{
+    form {
         width: 80%;
         margin: 2.5rem auto;
 
-        p{
+        p {
             font-size: 1.5rem;
             color: v.$text-primary;
 
-            label{
+            label {
                 display: block;
                 width: 100%;
                 text-align: start;
@@ -25,7 +24,7 @@
                 font-weight: bold;
             }
 
-            button{
+            button {
                 color: v.$text-primary;
                 margin-top: 0.8rem;
                 width: 100%;
@@ -33,7 +32,9 @@
                 border: 0;
                 border-radius: 2rem;
             }
-            input, textarea{
+
+            input,
+            textarea {
                 display: block;
                 width: 100%;
                 text-align: start;
@@ -42,7 +43,7 @@
             }
         }
 
-        h3{
+        h3 {
             color: v.$text-primary;
             font-size: 1.5rem;
             padding-top: 2.5rem;
@@ -54,9 +55,20 @@
 
 /*location*/
 
-.section-location{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.section{
+    &-location{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
+.location-information{
+    p {
+        span {
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}

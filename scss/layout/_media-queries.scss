@@ -31,14 +31,13 @@
         align-items: center;
         min-height: 25rem;
         margin-bottom: 5rem;
+
+        p,iframe{
+            display: inline-block;
+            width: 50%;
+        }
     }
 
-
-    .section-video p,
-    .section-video iframe {
-        display: inline-block;
-        width: 50%;
-    }
 
     /*section team*/
 

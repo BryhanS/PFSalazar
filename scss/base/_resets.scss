@@ -42,7 +42,7 @@ body {
         font-size: 3.5rem;
     }
 
-    box-icon{
+    box-icon,svg{
         @include icon-style;
     }
     
