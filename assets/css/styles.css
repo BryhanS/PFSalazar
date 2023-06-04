@@ -138,7 +138,7 @@ body box-icon {
   gap: 2rem;
 }
 .section-video p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #41491d;
   overflow: hidden;
 }
@@ -147,6 +147,7 @@ body box-icon {
   -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .article {
