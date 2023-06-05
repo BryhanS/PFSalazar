@@ -1,6 +1,5 @@
 html {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
 }
 
 * {
@@ -11,6 +10,7 @@ html {
 
 body {
   background-color: #fffbe9;
+  font-family: "Open Sans", sans-serif;
 }
 body:-webkit-scrollbar {
   display: none;
@@ -299,8 +299,9 @@ footer {
   display: none;
 }
 
-.product-section h2,
-.section-team h2,
+.product-section h1,
+.section-team h1,
+section h1,
 section h2 {
   text-align: center;
 }
