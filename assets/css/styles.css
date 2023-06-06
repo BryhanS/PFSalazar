@@ -80,7 +80,7 @@ body box-icon, body svg {
   object-fit: cover;
   border-radius: 1.5rem;
 }
-.card-body h3 {
+.card-body span {
   display: block;
   margin: 1rem;
   font-size: 2rem;
@@ -162,9 +162,10 @@ body box-icon, body svg {
   margin-bottom: 1.5rem;
   text-align: start;
 }
-.article-header h3 {
+.article-header h2 {
   font-size: 2rem;
   color: #41491d;
+  text-align: start;
 }
 .article-header p {
   font-weight: bold;
@@ -349,7 +350,7 @@ section h2 {
   margin: 2.5rem auto;
   text-align: center;
 }
-.section-blog h2 {
+.section-blog h1 {
   margin-bottom: 2.5rem;
 }
 
@@ -380,6 +381,12 @@ section h2 {
   width: 80%;
   margin: 2.5rem auto;
 }
+.form-section form h2 {
+  color: #41491d;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .form-section form p {
   font-size: 1.5rem;
   color: #41491d;
@@ -406,12 +413,6 @@ section h2 {
   text-align: start;
   border-bottom: solid #DAE2B6;
   color: #41491d;
-}
-.form-section form h3 {
-  color: #41491d;
-  font-size: 1.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 /*location*/

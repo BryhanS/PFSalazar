@@ -12,6 +12,15 @@
         width: 80%;
         margin: 2.5rem auto;
 
+        h2 {
+            color: v.$text-primary;
+            font-size: 1.5rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+
+
+
         p {
             font-size: 1.5rem;
             color: v.$text-primary;
@@ -43,12 +52,6 @@
             }
         }
 
-        h3 {
-            color: v.$text-primary;
-            font-size: 1.5rem;
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
-        }
 
     }
 }

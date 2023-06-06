@@ -7,4 +7,6 @@
 
 ```
     sass --watch ./scss/styles.scss ./assets/css/styles.css
+    or
+    npm run scss:watch
 ```
