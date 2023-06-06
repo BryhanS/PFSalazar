@@ -334,6 +334,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.header-container .logo-box .logo-img {
+  width: 48px;
+  height: 48px;
+}
 .header-container .logo-box span {
   color: #41491d;
   margin-left: 0.5rem;
