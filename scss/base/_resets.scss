@@ -6,7 +6,7 @@
 
 html {
     font-size: 62.50%;
-    
+
 }
 
 * {
@@ -18,7 +18,7 @@ html {
 body {
     background-color: v.$background-secondary;
     font-family: 'Open Sans', sans-serif;
-    
+
     &:-webkit-scrollbar {
         display: none;
     }
@@ -26,14 +26,14 @@ body {
     ul {
         list-style: none;
     }
-    
+
     a {
         color: v.$background-secondary;
         text-decoration: none;
         font-size: 2rem;
         cursor: pointer;
     }
-    
+
     h1,
     h2,
     h3 {
@@ -43,8 +43,9 @@ body {
         font-size: 3.5rem;
     }
 
-    box-icon,svg{
+    box-icon,
+    svg {
         @include icon-style;
     }
-    
+
 }

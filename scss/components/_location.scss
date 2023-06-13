@@ -8,19 +8,19 @@
         height: 100%;
     }
 
-    &-map{
-        iframe{
+    &-map {
+        iframe {
             width: 80%;
             height: 100%;
         }
     }
 
-    &-information{
+    &-information {
         width: 100%;
         padding: 0px 5rem;
         height: auto;
 
-        p{
+        p {
             font-size: 2rem;
             margin: 2.5rem auto;
             text-align: start;
@@ -29,4 +29,3 @@
         }
     }
 }
-

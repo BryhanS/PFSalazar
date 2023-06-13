@@ -1,40 +1,39 @@
-
 // _article.scss
 @use '../base/variable' as v;
 
 
-.article{
+.article {
     width: 80%;
     margin: auto;
     margin-bottom: 2.5rem;
 
-    &-header{
+    &-header {
         font-size: 1rem;
         display: block;
         width: 100%;
         margin-bottom: 1.5rem;
         text-align: start;
 
-        h2{
+        h2 {
             font-size: 2rem;
             color: v.$text-primary;
             text-align: start;
         }
 
-        p{
+        p {
             font-weight: bold;
             color: v.$text-primary;
         }
     }
 
-    &-body{
+    &-body {
         display: inline-block;
         width: 100%;
         height: auto;
         margin: auto;
         text-align: center;
 
-        p{
+        p {
             height: 100%;
             margin: auto;
             font-size: 1.5rem;
@@ -45,19 +44,19 @@
             font-weight: 500;
         }
 
-        img{
+        img {
             display: none;
         }
     }
 
-    &-end{
+    &-end {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         color: v.$text-primary;
         margin-top: 1rem;
 
-        a{
+        a {
             font-size: 1.5rem;
             color: v.$text-primary;
             cursor: pointer;

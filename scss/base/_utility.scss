@@ -1,9 +1,8 @@
-
 // _utility.scss
 
 @use './variable' as v;
 
-@mixin icon-style{
+@mixin icon-style {
     width: 30px;
     height: 30px;
     fill: v.$text-primary;
