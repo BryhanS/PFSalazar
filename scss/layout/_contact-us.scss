@@ -47,7 +47,7 @@
                 display: block;
                 width: 100%;
                 text-align: start;
-                border-bottom: solid v.$background-primary;
+                border: solid v.$background-primary;
                 color: v.$text-primary;
             }
         }
@@ -58,8 +58,8 @@
 
 /*location*/
 
-.section{
-    &-location{
+.section {
+    &-location {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -67,7 +67,7 @@
 
 }
 
-.location-information{
+.location-information {
     p {
         span {
             font-weight: 300;

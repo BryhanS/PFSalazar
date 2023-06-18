@@ -1,27 +1,25 @@
 //import base
 
-@use './base/resets';
-@use './base/utility';
-
-
+@use "./base/resets";
+@use "./base/utility";
 
 //import components
 
-@use './components/navbar';
-@use './components/carousel';
-@use './components/card';
-@use './components/team-card';
-@use './components/video';
-@use './components/article';
-@use './components/location';
-@use './components/footer';
-@use './components/team-card-animation';
-@use './components/shake-animation';
+@use "./components/navbar";
+@use "./components/carousel";
+@use "./components/card";
+@use "./components/team-card";
+@use "./components/video";
+@use "./components/article";
+@use "./components/location";
+@use "./components/footer";
+@use "./components/team-card-animation";
+@use "./components/shake-animation";
 
 //import layout
-@use './layout/index';
-@use './layout/about-us';
-@use './layout/category';
-@use './layout/blog';
-@use './layout/contact-us';
-@use './layout/media-queries';
+@use "./layout/index";
+@use "./layout/about-us";
+@use "./layout/category";
+@use "./layout/blog";
+@use "./layout/contact-us";
+@use "./layout/media-queries";

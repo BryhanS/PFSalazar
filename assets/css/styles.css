@@ -32,7 +32,8 @@ body h3 {
   color: #41491d;
   font-size: 3.5rem;
 }
-body box-icon, body svg {
+body box-icon,
+body svg {
   width: 30px;
   height: 30px;
   fill: #41491d;
@@ -468,7 +469,7 @@ section h2 {
   display: block;
   width: 100%;
   text-align: start;
-  border-bottom: solid #DAE2B6;
+  border: solid #DAE2B6;
   color: #41491d;
 }
 

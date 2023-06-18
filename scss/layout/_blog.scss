@@ -1,27 +1,27 @@
 // _blog.scss
 @use '../base/variable' as v;
 
-.section-blog{
+.section-blog {
     margin: 2.5rem auto;
     text-align: center;
 
-    h1{
+    h1 {
         margin-bottom: 2.5rem;
     }
 }
 
-.number-page{
+.number-page {
     width: 100%;
     text-align: center;
 
-    ul{
-        li{
+    ul {
+        li {
             display: inline-block;
             width: 50px;
             height: 50px;
             list-style: none;
 
-            a{
+            a {
                 text-decoration: none;
                 color: v.$text-primary;
                 font-weight: bold;

@@ -6,24 +6,24 @@
 
 /*section team*/
 
-.section-team{
+.section-team {
     margin-top: 2.5rem;
     text-align: center;
 
-    .team-body{
+    .team-body {
         display: flex;
         flex-direction: column;
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
 
-        img{
+        img {
             padding: 2rem;
             object-fit: cover;
             border-radius: 5rem;
             width: 100%;
         }
 
-        p{
+        p {
             font-size: 2rem;
             text-align: justify;
             overflow: hidden;
@@ -34,4 +34,3 @@
     }
 
 }
-
