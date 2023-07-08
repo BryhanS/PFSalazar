@@ -509,7 +509,8 @@ section h2 {
     min-height: 25rem;
     margin-bottom: 5rem;
   }
-  .section-video p, .section-video iframe {
+  .section-video p,
+  .section-video iframe {
     display: inline-block;
     width: 50%;
   }
