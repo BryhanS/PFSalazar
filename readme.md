@@ -1,7 +1,4 @@
-
-# Proyecto Web Panaderia Santa Maria
-
-
+# Proyecto Web Panaderia Santa Maria adaptado para javascript
 
 ### Comando para compilar sass
 

@@ -18,7 +18,8 @@ body:-webkit-scrollbar {
 body ul {
   list-style: none;
 }
-body a {
+body a,
+body button {
   color: #fffbe9;
   text-decoration: none;
   font-size: 2rem;
@@ -68,7 +69,7 @@ body svg {
 
 .card-body {
   display: block;
-  height: 35rem;
+  height: 38rem;
   width: 25rem;
   margin: 2.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -86,13 +87,15 @@ body svg {
   margin: 1rem;
   font-size: 2rem;
   text-align: center;
+  text-transform: capitalize;
   color: #41491d;
 }
-.card-body a {
-  display: block;
+.card-body button {
   background-color: #41491d;
   text-align: center;
   border-radius: 5px;
+  text-transform: capitalize;
+  width: 100%;
 }
 
 .team-container {

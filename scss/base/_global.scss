@@ -14,7 +14,8 @@ body {
         list-style: none;
     }
 
-    a {
+    a,
+    button {
         color: v.$background-secondary;
         text-decoration: none;
         font-size: 2rem;
