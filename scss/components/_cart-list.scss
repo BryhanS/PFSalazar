@@ -1,0 +1,48 @@
+// _cart-list.scss
+@use '../base/variable' as v;
+
+.listCart {
+    margin-top: 20px;
+    margin-left: 50px;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .input-group {
+
+            margin: 0px 20px;
+            width: 100px;
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type=number] {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .precio {
+            margin: 0px 10px;
+        }
+
+        .monto {
+            margin: 0px 10px;
+        }
+    }
+}

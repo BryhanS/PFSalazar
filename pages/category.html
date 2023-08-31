@@ -137,8 +137,64 @@
         <h1>Catalogo de Productos</h1>
 
         <div id="shop" class="card-container"></div>
+        <div class="cart">
+          <h2>Tus compras</h2>
+          <ul class="listCart">
+            <li>
+              <img src="../assets/img/product-1.png" alt="" />
+
+              <div class="input-group">
+                <button class="minus-item input-group-addon btn btn-primary">
+                  -
+                </button>
+                <input
+                  type="number"
+                  class="item-count form-control"
+                  min="0"
+                  max="100"
+                />
+                <button class="plus-item btn btn-primary input-group-addon">
+                  +
+                </button>
+              </div>
+              <p class="precio">s/. 0.50</p>
+              <p class="monto">s/ 5.00</p>
+            </li>
+            <li>
+              <img src="../assets/img/product-1.png" alt="" />
+
+              <div class="input-group">
+                <button class="minus-item input-group-addon btn btn-primary">
+                  -
+                </button>
+                <input
+                  type="number"
+                  class="item-count form-control"
+                  min="0"
+                  max="100"
+                />
+                <button class="plus-item btn btn-primary input-group-addon">
+                  +
+                </button>
+              </div>
+              <p class="precio">s/. 0.50</p>
+              <p class="monto">s/ 15.00</p>
+            </li>
+          </ul>
+          <div class="checkout">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <div class="popup" id="popup1">
+      <p>This is a popup!</p>
+      <p>Overlay uses <b>box-shadow</b>.</p>
+      <p>(Doesn't block elements on background)</p>
+      <a href="#" onclick="hide('popup1')">Ok!</a>
+    </div>
 
     <footer>
       <section class="footer-left">
