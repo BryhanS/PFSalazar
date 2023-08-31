@@ -428,6 +428,8 @@ footer {
 .popup .btn-group a,
 .popup .btn-group button {
   font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .header-container {
