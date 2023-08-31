@@ -1,12 +1,15 @@
 "use strict";
 
 const divProducto = document.getElementById("shop");
+const popup1 = document.getElementById("close-btn");
 
 let productosVenta = JSON.parse(localStorage.getItem("productos"));
 
-document.addEventListener("DOMContentLoaded", () => {
-  CardsProducts(productosVenta);
-});
+let currentPageURL = window.location.href;
+
+function closePopup() {
+  document.getElementById("popup1").style.display = "none";
+}
 
 export const CardsProducts = (productos) => {
   divProducto.innerHTML = "";
@@ -28,3 +31,20 @@ export const CardsProducts = (productos) => {
     divProducto.appendChild(card);
   });
 };
+
+if (currentPageURL.includes("index")) {
+  //close popup index
+  popup1.addEventListener("click", () => {
+    closePopup();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape") {
+      closePopup();
+    }
+  });
+} else {
+  document.addEventListener("DOMContentLoaded", () => {
+    CardsProducts(productosVenta);
+  });
+}
