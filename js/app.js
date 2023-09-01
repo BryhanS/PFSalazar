@@ -1,9 +1,11 @@
 "use strict";
+import { comprarProducto } from "./cart";
 
 const divProducto = document.getElementById("shop");
 const popup1 = document.getElementById("close-btn");
+const closeButton = document.getElementById("closeShopping");
 
-let productosVenta = JSON.parse(localStorage.getItem("productos"));
+export let productosDisponibles = JSON.parse(localStorage.getItem("productos"));
 
 let currentPageURL = window.location.href;
 
@@ -11,10 +13,14 @@ function closePopup() {
   document.getElementById("popup1").style.display = "none";
 }
 
+function closeCart() {
+  document.getElementById("idCart").classList.add("close");
+}
+
 export const CardsProducts = (productos) => {
   divProducto.innerHTML = "";
-  productosVenta.forEach((producto) => {
-    const { nombre, precio, imagen, altinf } = producto;
+  productosDisponibles.forEach((producto, key) => {
+    const { id, nombre, imagen, altinf } = producto;
 
     let card = document.createElement("div");
     card.className = "card-body";
@@ -24,11 +30,14 @@ export const CardsProducts = (productos) => {
         alt="${altinf}"
         />
         <span>${nombre}</span>
-        <button type="button">add to cart</a>
+        <button id="btn-${id}" type="button">add to cart</button>
     
     `;
 
     divProducto.appendChild(card);
+
+    const btnComprar = document.getElementById(`btn-${id}`)
+    btnComprar.addEventListener('click',() => comprarProducto(id))
   });
 };
 
@@ -45,6 +54,10 @@ if (currentPageURL.includes("index")) {
   });
 } else {
   document.addEventListener("DOMContentLoaded", () => {
-    CardsProducts(productosVenta);
+    CardsProducts(productosDisponibles);
+  });
+
+  closeButton.addEventListener("click", () => {
+    closeCart();
   });
 }

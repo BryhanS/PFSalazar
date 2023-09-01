@@ -31,9 +31,28 @@
         display: grid;
         place-items: center;
         grid-auto-flow: column;
+        grid-template:
+            "total close"
+            "checkout checkout"
+        ;
 
-        .closeShopping {
+        margin-bottom: 25px;
+        font-size: 3rem;
+
+        .total {
+            grid-area: total;
+        }
+
+        #closeShopping {
+            grid-area: close;
             font-size: 3rem;
+            width: 100%;
+        }
+
+        .shopping {
+            grid-area: checkout;
+            font-size: 3rem;
+
         }
     }
 

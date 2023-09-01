@@ -354,8 +354,20 @@ footer {
   display: grid;
   place-items: center;
   grid-auto-flow: column;
+  grid-template: "total close" "checkout checkout";
+  margin-bottom: 25px;
+  font-size: 3rem;
 }
-.cart .checkout .closeShopping {
+.cart .checkout .total {
+  grid-area: total;
+}
+.cart .checkout #closeShopping {
+  grid-area: close;
+  font-size: 3rem;
+  width: 100%;
+}
+.cart .checkout .shopping {
+  grid-area: checkout;
   font-size: 3rem;
 }
 
