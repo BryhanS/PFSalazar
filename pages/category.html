@@ -139,8 +139,8 @@
         <div id="shop" class="card-container"></div>
         <div id="idCart" class="cart">
           <h2>Tus compras</h2>
-          <ul class="listCart">
-            <li>
+          <ul id="cartList" class="listCart">
+            <!-- <li>
               <img src="../assets/img/product-1.png" alt="" />
 
               <div class="input-group">
@@ -159,30 +159,10 @@
               </div>
               <p class="precio">s/. 0.50</p>
               <p class="monto">s/ 5.00</p>
-            </li>
-            <li>
-              <img src="../assets/img/product-1.png" alt="" />
-
-              <div class="input-group">
-                <button class="minus-item input-group-addon btn btn-primary">
-                  -
-                </button>
-                <input
-                  type="number"
-                  class="item-count form-control"
-                  min="0"
-                  max="100"
-                />
-                <button class="plus-item btn btn-primary input-group-addon">
-                  +
-                </button>
-              </div>
-              <p class="precio">s/. 0.50</p>
-              <p class="monto">s/ 15.00</p>
-            </li>
+            </li> -->
           </ul>
           <div class="checkout">
-            <div class="total">0</div>
+            <div id="totalSum" class="total">0</div>
             <div id="closeShopping" class="btn btn-danger">Close</div>
             <div class="shopping">checkout</div>
           </div>
@@ -308,10 +288,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    
+
     <script type="module" src="../db/products.js"></script>
     <script type="module" src="../js/app.js"></script>
-    <script type="module" src="../js/cart.js"></script>
-
   </body>
 </html>

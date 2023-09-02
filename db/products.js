@@ -7,6 +7,7 @@ class Producto {
     this.precio = precio;
     this.imagen = `product-${id}.png`;
     this.altinf = `la imagen contiene ${nombre}`;
+    this.cantidad = 1;
   }
 }
 
