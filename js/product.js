@@ -1,4 +1,5 @@
 "use strict";
+
 import { comprarProducto } from "./buy.js";
 
 const divProducto = document.getElementById("shop");
@@ -26,4 +27,5 @@ export const CardsProducts = (productos) => {
     const btnComprar = document.getElementById(`btn-${id}`);
     btnComprar.addEventListener("click", () => comprarProducto(id));
   });
+  
 };

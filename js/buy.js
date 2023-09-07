@@ -1,4 +1,5 @@
 "use strict";
+
 import { productList } from "./cart.js";
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
 let productosDisponibles = JSON.parse(localStorage.getItem("productos"));

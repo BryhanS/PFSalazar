@@ -1,4 +1,5 @@
 "use strict";
+
 import { closePopup, closeCart } from "./operator.js";
 import { productList } from "./cart.js";
 import { CardsProducts } from "./product.js";

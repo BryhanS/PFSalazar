@@ -1,4 +1,5 @@
 "use strict";
+
 import { addCantidad, decreaseCantidad, generarTotales } from "./operator.js";
 const listCart = document.getElementById("cartList");
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
@@ -31,7 +32,7 @@ export const productList = () => {
             </button>
           </div>
           <p class="precio">s/. ${precio.toFixed(2)}</p>
-          <p class="monto">s/ ${(precio * cantidad).toFixed(2)}</p>
+          <p id="m-${id}" class="monto">S/. ${(precio * cantidad).toFixed(2)}</p>
         `;
       listCart.append(cardLi);
     }

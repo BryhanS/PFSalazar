@@ -1,6 +1,7 @@
 "use strict";
 
 import { productList } from "./cart.js";
+import { CardsProducts } from "./product.js";
 
 const totalSum = document.getElementById("totalSum");
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
@@ -37,8 +38,12 @@ export const addCantidad = (id) => {
   carrito[indexProductoCarrito].cantidad++;
 
   sessionStorage.setItem("carrito", JSON.stringify(carrito));
+
   let input = document.getElementById(`in-${id}`);
+  let monto = document.getElementById(`m-${id}`);
+
   input.value = carrito[indexProductoCarrito].cantidad;
+  monto.innerText = `S/.${(carrito[indexProductoCarrito].cantidad * carrito[indexProductoCarrito].precio).toFixed(2)}`;
 };
 
 export const decreaseCantidad = (id) => {
@@ -48,8 +53,12 @@ export const decreaseCantidad = (id) => {
 
   carrito[indexProductoCarrito].cantidad--;
 
-  if (carrito[indexProductoCarrito].cantidad <= 0) {
+  let input = document.getElementById(`in-${id}`);
+  input.value = carrito[indexProductoCarrito].cantidad;
+
+  if (carrito[indexProductoCarrito].cantidad < 1) {
     carrito.splice(indexProductoCarrito, 1);
+    location.reload();
   }
   sessionStorage.setItem("carrito", JSON.stringify(carrito));
 };
