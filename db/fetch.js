@@ -26,5 +26,27 @@ productos.push(new Producto("10", "Chancay", 1.5));
 productos.push(new Producto("11", "Chocoduca", 0.25));
 productos.push(new Producto("12", "Caramanduca", 0.3));
 
-JSON.parse(localStorage.getItem("productos")) ||
-  localStorage.setItem("productos", JSON.stringify(productos));
+//save to json file
+
+// const fs = require("fs");
+
+// const saveData = (data, file) => {
+//   const finished = (error) => {
+//     if (error) {
+//       console.log(error);
+//       return;
+//     }
+//   };
+
+//   const jsonData = JSON.stringify(data, null, 2);
+//   fs.writeFile(file, jsonData, finished);
+// };
+
+//fetch  with local data
+fetch("../db/products.json", { method: "GET" })
+  .then((response) => response.json())
+  .then((data) => {
+    JSON.parse(localStorage.getItem("productos")) ||
+      localStorage.setItem("productos", JSON.stringify(data));
+  })
+  .catch((err) => console.log("Solicitud fallida", err));
