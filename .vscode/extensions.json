@@ -1,7 +1,8 @@
 {
-    "recommendations": [
-        "ms-vscode.live-server",
-        "pkief.material-icon-theme",
-        "ritwickdey.liveserver"
-    ]
+  "recommendations": [
+    "ms-vscode.live-server",
+    "pkief.material-icon-theme",
+    "ritwickdey.liveserver",
+    "dracula-theme.theme-dracula"
+  ]
 }

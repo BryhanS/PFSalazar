@@ -1,7 +1,10 @@
 "use strict";
 
 import { productList } from "./cart.js";
-let carrito = JSON.parse(sessionStorage.getItem("carrito"));
+import { addCantidad } from "./operator.js";
+import { carrito } from "./app.js";
+import { checkoutShop } from "./checkout.js";
+
 let productosDisponibles = JSON.parse(localStorage.getItem("productos"));
 
 export const comprarProducto = (idProducto) => {
@@ -32,8 +35,8 @@ export const comprarProducto = (idProducto) => {
       (producto) => precio.id === idProducto
     );
     sessionStorage.setItem("carrito", JSON.stringify(carrito));
-  }
 
-  carrito = JSON.parse(sessionStorage.getItem("carrito"));
-  productList();
+    isNaN(id) ? productList(id) : addCantidad(id);
+  }
+  productList(carrito);
 };

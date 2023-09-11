@@ -1,13 +1,11 @@
 "use strict";
 
 import { productList } from "./cart.js";
-import { CardsProducts } from "./product.js";
+import { carrito } from "./app.js";
 
 const totalSum = document.getElementById("totalSum");
-let carrito = JSON.parse(sessionStorage.getItem("carrito"));
-
-export const closePopup = () => {
-  document.getElementById("popup1").style.display = "none";
+export const closePopup = (idHtml) => {
+  document.getElementById(idHtml).style.display = "none";
 };
 
 export const closeCart = () => {
@@ -29,6 +27,7 @@ export const generarTotales = () => {
     0
   );
   totalSum.innerHTML = `s/. ${costoTotal.toFixed(2)}`;
+  return costoTotal.toFixed(2);
 };
 
 export const addCantidad = (id) => {
@@ -39,11 +38,8 @@ export const addCantidad = (id) => {
 
   sessionStorage.setItem("carrito", JSON.stringify(carrito));
 
-  let input = document.getElementById(`in-${id}`);
-  let monto = document.getElementById(`m-${id}`);
-
-  input.value = carrito[indexProductoCarrito].cantidad;
-  monto.innerText = `S/.${(carrito[indexProductoCarrito].cantidad * carrito[indexProductoCarrito].precio).toFixed(2)}`;
+  productList(carrito);
+  generarTotales();
 };
 
 export const decreaseCantidad = (id) => {
@@ -53,12 +49,10 @@ export const decreaseCantidad = (id) => {
 
   carrito[indexProductoCarrito].cantidad--;
 
-  let input = document.getElementById(`in-${id}`);
-  input.value = carrito[indexProductoCarrito].cantidad;
-
   if (carrito[indexProductoCarrito].cantidad < 1) {
     carrito.splice(indexProductoCarrito, 1);
-    location.reload();
   }
   sessionStorage.setItem("carrito", JSON.stringify(carrito));
+  productList(carrito);
+  generarTotales();
 };

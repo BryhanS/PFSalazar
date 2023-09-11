@@ -164,10 +164,20 @@
           <div class="checkout">
             <div id="totalSum" class="total">0</div>
             <div id="closeShopping" class="btn btn-danger">Close</div>
-            <div class="shopping">checkout</div>
+            <div id="endBuy" class="shopping">Finaliza tu Compra</div>
           </div>
         </div>
       </section>
+
+      <div class="popup checkout w-auto" id="popup-checkout">
+        <h3>Estimado Cliente</h3>
+        <p>Gracias por su compra, el detalle de su pedido es:</p>
+        <table id="tablePay"></table>
+
+        <button type="button" class="btn btn-danger w-100" id="closeCheckout">
+          Close
+        </button>
+      </div>
     </main>
 
     <footer>

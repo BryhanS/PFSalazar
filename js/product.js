@@ -27,5 +27,4 @@ export const CardsProducts = (productos) => {
     const btnComprar = document.getElementById(`btn-${id}`);
     btnComprar.addEventListener("click", () => comprarProducto(id));
   });
-  
 };

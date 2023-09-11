@@ -1,14 +1,13 @@
 "use strict";
 
-import { addCantidad, decreaseCantidad, generarTotales } from "./operator.js";
-const listCart = document.getElementById("cartList");
-let carrito = JSON.parse(sessionStorage.getItem("carrito"));
+import { addCantidad, decreaseCantidad } from "./operator.js";
 
-export const productList = () => {
+const listCart = document.getElementById("cartList");
+
+export const productList = (carrito) => {
   listCart.innerHTML = "";
   carrito.forEach((producto) => {
-    const { imagen, cantidad, precio, id, monto } = producto;
-
+    const { imagen, cantidad, precio, id } = producto;
     if (producto != null) {
       let cardLi = document.createElement("li");
       cardLi.innerHTML = `
@@ -32,7 +31,9 @@ export const productList = () => {
             </button>
           </div>
           <p class="precio">s/. ${precio.toFixed(2)}</p>
-          <p id="m-${id}" class="monto">S/. ${(precio * cantidad).toFixed(2)}</p>
+          <p id="m-${id}" class="monto">S/. ${(precio * cantidad).toFixed(
+        2
+      )}</p>
         `;
       listCart.append(cardLi);
     }
@@ -43,5 +44,4 @@ export const productList = () => {
     btnAdd.addEventListener("click", () => addCantidad(id));
     btnDecrease.addEventListener("click", () => decreaseCantidad(id));
   });
-  generarTotales();
 };

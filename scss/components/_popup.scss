@@ -33,4 +33,30 @@
 
         }
     }
+
+    table {
+        width: 100%;
+        border: 1px solid #999;
+
+        caption,
+        td,
+        th {
+            padding: 0.3em;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+    }
+
+}
+
+.checkout {
+    height: auto;
+}
+
+#popup-checkout {
+    display: none;
 }

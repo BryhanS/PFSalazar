@@ -2,11 +2,9 @@
 
 El proyecto de javascript prensentado el objetivo es la implementacion de un carrito de compras usando Dom manipulation, localstorage y las funciones explicadas en clase.
 
-- En la carpeta DB esta alogada el objeto de productos para la amplicacion web.
+- En la carpeta DB esta alogada el objeto de productos para la amplicacion web json y local fetch.
 
 - En carpeta Js se encuentra particionado las diferentes funcionalidades del proyecto.
-
-- Local Fetch se encuentra en la carpeta DB
 
 ### Javascript se encuentra en Tienda
 
