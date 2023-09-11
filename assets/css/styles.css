@@ -468,6 +468,10 @@ footer {
 #popup-checkout {
   display: none;
 }
+#popup-checkout #closeCheckout {
+  margin-top: 10px;
+  font-size: 2rem;
+}
 
 .header-container {
   background-color: #DAE2B6;

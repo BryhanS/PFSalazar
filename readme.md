@@ -6,6 +6,8 @@ El proyecto de javascript prensentado el objetivo es la implementacion de un car
 
 - En carpeta Js se encuentra particionado las diferentes funcionalidades del proyecto.
 
+- SweetAlert2 version se uso para notificar la terminacion de la compra
+
 ### Javascript se encuentra en Tienda
 
 ### Comando para compilar sass

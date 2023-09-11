@@ -43,12 +43,22 @@ function startingApp() {
 
     closeCheckout.addEventListener("click", () => {
       closePopup("popup-checkout");
+      //sweetAlert
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Gracias por tu compra tu pedido sera procesado!!',
+        showConfirmButton: false,
+        timer: 2500
+      })
     });
 
     endBuy.addEventListener("click", () => {
       closeCart();
       document.getElementById("popup-checkout").style.display = "block";
       checkoutShop(carrito);
+
+
     });
   }
 }
